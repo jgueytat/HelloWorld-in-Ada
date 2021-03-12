@@ -3,6 +3,5 @@ image:
 
 vscode:
   extensions:
-    - ms-vscode.cmake-tools@1.6.0:lvoCR5usjseB5thI3sZhWA==
     - eclipse-cdt.cdt-gdb-vscode@0.0.91:/pyXj5+djF119/nFLGAOvg==
-    - llvm-vs-code-extensions.vscode-clangd@0.1.9:RqXwspHjd7liDzeASuaexQ==
+    - adacore.ada@22.0.5:b56gZDvQ5KBm6u34IBzm1g==

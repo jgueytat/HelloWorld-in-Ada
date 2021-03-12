@@ -5,11 +5,10 @@ pipelines:
     - step:
         name: Build
         script:
-          - cmake --config Debug --target HelloWorld -S . -B build
-          - cmake --build build -- -j
+          - gprbuild -P hello.gpr
         artifacts:
-          - build/HelloWorld
+          - build/hello
     - step:
         name : Run
         script:
-          - build/HelloWorld
+          - build/hello

@@ -1,41 +1,27 @@
+// A launch configuration that launches the extension inside a new window
 {
-    "version": "0.2.0",
-    "configurations": [        
-        {
-            "name": "HelloWorld (Web)",
-            "type": "gdb",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/HelloWorld"
-        },
-        {
-            "name": "HelloWorld (Windows with container)",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/HelloWorld",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ]
-        },
-        {
-            "name": "HelloWorld (Windows locally)",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/Debug/HelloWorld.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "console": "externalTerminal"
-        }
-    ]
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "(gdb) Build & debug",
+			"preLaunchTask": "build",
+			"type": "gdb",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"valuesFormatting": "parseText",
+            "windows": {
+				"target": "${workspaceRoot}/build/hello.exe",
+                "MIMode": "gdb",
+                "miDebuggerPath": "C:/GNAT/bin/gdb.exe" // Path to gdb on windows
+            },
+            "linux": {
+				"target": "${workspaceRoot}/build/hello",
+                "MIMode": "gdb"
+            },
+            "osx": {
+				"target": "${workspaceRoot}/build/hello",
+                "MIMode": "lldb"
+            }
+		},
+	]
 }
