@@ -1,7 +1,6 @@
 image:
-  file: .gitpod.Dockerfile
+  file: Dockerfile
 
 vscode:
   extensions:
-    - eclipse-cdt.cdt-gdb-vscode@0.0.91:/pyXj5+djF119/nFLGAOvg==
     - adacore.ada@22.0.5:b56gZDvQ5KBm6u34IBzm1g==
