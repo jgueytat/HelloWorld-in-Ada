@@ -1,27 +1,14 @@
-// A launch configuration that launches the extension inside a new window
 {
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "(gdb) Build & debug",
-			"preLaunchTask": "build",
 			"type": "gdb",
 			"request": "launch",
-			"cwd": "${workspaceFolder}",
-			"valuesFormatting": "parseText",
-            "windows": {
-				"target": "${workspaceRoot}/build/hello.exe",
-                "MIMode": "gdb",
-                "miDebuggerPath": "C:/GNAT/bin/gdb.exe" // Path to gdb on windows
-            },
-            "linux": {
-				"target": "${workspaceRoot}/build/hello",
-                "MIMode": "gdb"
-            },
-            "osx": {
-				"target": "${workspaceRoot}/build/hello",
-                "MIMode": "lldb"
-            }
-		},
+			"preLaunchTask": "build",
+			"name": "Launch Program",
+			"target": "./build/hello",
+			"cwd": "${workspaceRoot}",
+			"valuesFormatting": "parseText"
+		}
 	]
 }

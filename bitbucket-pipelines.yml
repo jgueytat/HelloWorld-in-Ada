@@ -5,7 +5,7 @@ pipelines:
     - step:
         name: Build
         script:
-          - gprbuild -P hello.gpr
+          - gprbuild -p -P hello.gpr
         artifacts:
           - build/hello
     - step:
