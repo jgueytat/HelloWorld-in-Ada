@@ -1,14 +1,12 @@
 {
 	"version": "0.2.0",
 	"configurations": [
-		{
-			"type": "gdb",
-			"request": "launch",
-			"preLaunchTask": "build",
-			"name": "Launch Program",
-			"target": "./build/hello",
-			"cwd": "${workspaceRoot}",
-			"valuesFormatting": "parseText"
-		}
+        {
+            "type": "gdb",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "name": "Build and Run",
+            "program": "${workspaceFolder}/build/hello"
+        }
 	]
 }

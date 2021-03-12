@@ -8,7 +8,7 @@
             "args": [
                 "-p",
                 "-P",
-                "${workspaceFolder}/hello.gpr",
+                "${workspaceFolder}/hello.gpr"
             ],
             "problemMatcher": ["$ada"],
             "group": {
