@@ -5,6 +5,6 @@
 	"runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
 	"extensions": [
 		"adacore.ada",
-		"eclipse-cdt.cdt-gdb-vscode"
+		"webfreak.debug"
 	]
 }

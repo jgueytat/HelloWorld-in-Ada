@@ -4,9 +4,10 @@
         {
             "type": "gdb",
             "request": "launch",
-            "preLaunchTask": "build",
-            "name": "Build and Run",
-            "program": "${workspaceFolder}/build/hello"
+            "name": "Launch Program",
+            "target": "./build/hello",
+            "cwd": "${workspaceRoot}",
+            "valuesFormatting": "parseText"
         }
 	]
 }
