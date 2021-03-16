@@ -1,5 +1,5 @@
 image:
-  file: .devcontainer/Dockerfile
+  file: Dockerfile
 
 vscode:
   extensions:
