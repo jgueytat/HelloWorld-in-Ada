@@ -3,5 +3,5 @@ image:
 
 vscode:
   extensions:
-    - adacore.ada@22.0.5:b56gZDvQ5KBm6u34IBzm1g==
-    - webfreak.debug@0.25.0:F9uLpAOde6r0l7rgMC8LTQ==
+    - adacore.ada
+    - webfreak.debug
