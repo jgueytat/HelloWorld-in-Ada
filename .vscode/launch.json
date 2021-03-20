@@ -4,9 +4,9 @@
         {
             "type": "gdb",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Hello in Ada",
             "target": "./build/hello",
-            "cwd": "${workspaceRoot}",
+            "cwd": "${cwd}",
             "valuesFormatting": "parseText"
         }
 	]
