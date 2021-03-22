@@ -1,6 +1,2 @@
 image:
   file: Dockerfile
-
-vscode:
-  extensions:
-    - adacore.ada
