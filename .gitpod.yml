@@ -1,2 +1,8 @@
+
 image:
   file: Dockerfile
+
+vscode:
+  extensions:
+    - webfreak.debug
+    - adacore.ada
